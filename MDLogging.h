@@ -24,10 +24,10 @@
  *  2 - MMDLog( @"Some number: %d", 5 );
  *      - Output: "[SomeClass someMethod] (linenumber) -> Some Number: 5"
  *
- * For distribution, release builds, and any other build where the 'DEBUG' flag is NOT set, 'MMDLog()'
+ * For distribution, release builds, and any other build where the 'DEBUG' flag is NOT set, 'MDDebugLog()'
  * is replaced by an emdpty block.
  *
- * 'MDDLog()' is intended ONLY to help debugging, and should be used only when it would be beneficial
+ * 'MDDebugLog()' is intended ONLY to help debugging, and should be used only when it would be beneficial
  * to log data while testing and debugging, but would otherwise be unnecessary for production builds.
  */
 #ifdef DEBUG
@@ -37,12 +37,12 @@
 #endif
 
 /*
- * Defines a general logging function where loggin data for both DEBUG builds and production builds.
- * With the DEBUG flag set, it will use 'MMDLog()' from above, and logs all the information listed in
- * the notes for 'MMDLog().'
+ * Defines a general logging function where logging data for both DEBUG builds and production builds.
+ * With the DEBUG flag set, it will use 'MDDebugLog()' from above, and logs all the information listed in
+ * the notes for 'MDDebugLog().'
  *
  * Without the DEBUG flag, this method will instead use the standard 'NSLog()' function, without the
- * extra information acssociated with 'MMDLog().' Only the format passed in will get logged.
+ * extra information acssociated with 'MDDebugLog().' Only the format passed in will get logged.
  *
  * Its usage is identical to calling 'NSLog()' directly.
  *
