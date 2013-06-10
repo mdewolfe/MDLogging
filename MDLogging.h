@@ -19,9 +19,9 @@
  * Defines a logging macro that is will only log information when the 'DEBUG' flag is defined. Prints,
  * the class, method, line number, and the format string passed in. Its usage is exactly like 'NSLog().'
  * Usage Example:
- *  1 - MMDLog( @"hello, world" );
+ *  1 - MMDebugLog( @"hello, world" );
  *      - Output: "[SomeClass someMethod] (linenumber) -> hello, world"
- *  2 - MMDLog( @"Some number: %d", 5 );
+ *  2 - MMDebugLog( @"Some number: %d", 5 );
  *      - Output: "[SomeClass someMethod] (linenumber) -> Some Number: 5"
  *
  * For distribution, release builds, and any other build where the 'DEBUG' flag is NOT set, 'MDDebugLog()'
