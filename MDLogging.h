@@ -9,7 +9,7 @@
 /*
  * Some basic logging functions.
  * The place option for using this file is to include it the taregt's pre-compiled header file (.pch).
- * This will make these macros available to all translation units for the given target.
+ * This will make these macros available to all source files for the given target.
  */
 
 #ifndef _MDLogging_h
